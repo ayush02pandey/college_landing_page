@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>
+			GEC Bharuch
+		</title>
+		 <!-- Required meta tags -->
+		 <meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 
+		 <!-- Bootstrap CSS -->
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		 <script src="https://kit.fontawesome.com/d1b4dc38bc.js" crossorigin="anonymous"></script>
+		  <!-- BootStrap 5 link -->
+		  <link
+		  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+		  rel="stylesheet"
+		/> 
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+       <style>
+           #preloader{
+		  background: #fff url(images/logo1.gif) no-repeat center center;
+		  background-size:15%;
+		  height:100%;
+		  width:100%;
+		  position:fixed;
+		  z-index:100;
+		
+		}
+		#logo{
+			
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			
+		}
+		.navbar{
+			height:60px;
+			background-color: #063970;
+			border-radius: 0 0 0 50px;
+		}
+		.btn-sc{
+			background: #FF4742;
+			border: 1px solid #FF4742;
+			border-radius: 6px;
+			box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+			box-sizing: border-box;
+			color: #FFFFFF;
+			cursor: pointer;
+			display: inline-block;
+			font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+			font-size: 16px;
+			font-weight: 800;
+			line-height: 16px;
+			min-height: 40px;
+			outline: 0;
+			padding: 12px 14px;
+			text-align: center;
+			text-rendering: geometricprecision;
+			text-transform: none;
+			user-select: none;
+			-webkit-user-select: none;
+			touch-action: manipulation;
+			vertical-align: middle;
+			margin-left: 30px;
+		}
+		.btn-sc:hover,
+		.btn-sc:active {
+				background-color: initial;
+				background-position: 0 0;
+				color: #FF4742;
+}
+
+		.btn-sc {
+  				opacity: 1
+}
+		.btn-nba{
+	
+			background-color: white; 
+			color: black; 
+			border: 2px solid #f44336;
+			border-radius: 4px;
+}
+
+		.btn-nba:hover {
+				background-color: #f44336;
+				color: white;
+		}
+		.icon-bar {
+		position: fixed;
+		top: 50%;
+		/* -webkit-transform: translateY(-50%); */
+		/* -ms-transform: translateX(-50%); */
+		transform: translateY(-50%);
+		right: -17px;
+		z-index: 1;
+		margin-top: 10px;
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+
+  .icon-bar:hover{
+    right: 0px;
+    transition: 2s;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .phone {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .envelope {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .show {display:block;}
+  footer {
+  background: #063970;
+  background: -webkit-linear-gradient(59deg, #0f59c9, #063970);
+  background: linear-gradient(59deg, #0f59c9, #063970);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+.navbar .dropdown-toggle, .navbar .dropdown-menu a {
+    cursor: pointer;
+}
+
+.navbar .dropdown-item.active, .navbar .dropdown-item:active {
+    color: inherit;
+    text-decoration: none;
+    background-color:white;
+	width:block;
+	 
+}
+
+.navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
+    color:inherit;
+    text-decoration: none;
+    background-color:orange;
+	left:100px;
+	
+	
+}
+
+@media (min-width: 767px) {
+    .navbar .dropdown-toggle:not(.nav-link)::after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: .5em;
+        vertical-align: 0;
+        border-bottom: .3em solid ;
+        border-top: .3em solid;
+        border-left: .3em solid;
+    }
+}
+.navbar-toggler{
+background-color:#fa3605;
+}
+#navbarSupportedContent{
+background-color:#063970;
+border-radius: 0 0 0 50px;
+margin-right: 10px;
+
+}
+.text-grid{
+			grid-template-columns: auto auto auto;
+			display: grid;
+			width: 1100px;
+			text-align: left;
+			margin-left: 80px;
+			color: floralwhite;
+			margin-top: 10px;
+			margin: auto;
+			
+		}
+		.grid-about{
+			background-color: lawngreen;
+			padding: 5px 10px;
+		}
+		.grid-vision{
+			background-color: orange;
+			padding: 5px 10px;
+
+		}
+		.grid-mission{
+			background-color: dodgerblue;
+			padding: 5px 10px;
+		}
+
+.borderBottom{
+        border-bottom: 2px solid orange;
+    }
+    
+    .vm{
+        border-color: #fd5308;
+        background-color: #fd5308;
+        color: #fff;
+    }
+    
+    a{color: #A0A0A0;}
+    
+    a:hover{
+        color:#fd5308
+    }
+.mainfooter{
+	margin-bottom:0px;
+}
+
+
+       </style>
+    </head>
+<body class="d-flex flex-column min-vh-100">
+ <div id="preloader"></div>
+ <div id="logo">
+		<img src="images/Logo-strip.png" alt="logo" style="width:100%" height="170">
+ </div>
+ <nav class="navbar  sticky-top navbar-expand-lg navbar-dark ">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent" >
+	  <ul class="navbar-nav mr-auto" >
+		<li class="nav-item active">
+		  <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+		</li>
+		
+		<li class="nav-item dropdown">
+		  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			ABOUT
+		  </a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Something else here</a>
+		  </div>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  ACADEMICS
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="#">Action</a>
+			  <a class="dropdown-item" href="#">Another action</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  DEPARTMENTS
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="#">Action</a>
+			  <a class="dropdown-item" href="#">Another action</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CAMPUS</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<li class="dropdown-item" href="#"><a>WOMEN DEVLOPMENT CELL</a></li>
+				 <li class="dropdown-item" href="#"><a>ALUMNI ASSOCIATION</a></li>
+				<li class="dropdown-item dropdown">
+					<a class="dropdown-toggle" id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PALCEMENT CELL</a>
+					<ul class="dropdown-menu" aria-labelledby="dropdown1-1">
+						<li class="dropdown-item" href="#"><a>Action 1.1</a></li>
+						<li class="dropdown-item dropdown">
+							<a class="dropdown-toggle" id="dropdown1-1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown1.1.1</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdown1-1-1">
+								<li class="dropdown-item" href="#"><a>Action 1.1.1</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		  <!-- <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  CAMPUS
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="#">Action</a>
+			  <a class="dropdown-item" href="#">Another action</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		  </li> -->
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  FACILITIES
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="#">Action</a>
+			  <a class="dropdown-item" href="#">Another action</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  ACTIVITIES
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="#">Action</a>
+			  <a class="dropdown-item" href="#">Another action</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  USEFUL LINK
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="#">Action</a>
+			  <a class="dropdown-item" href="#">Another action</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		  </li>
+	  </ul>
+	  <a href='#'>
+        <button class="btn-nba">
+            NBA Visit Content
+        </button>
+    </a>	
+	<a href='#'>
+        <button class="btn-sc">
+            Students Corner
+        </button>
+    </a>
+
+</div>
+  </nav>
+  <div class="icon-bar">
+	<a href="#" class="phone"><i class="fa fa-phone"></i></a>
+	<a href="#" class="envelope"><i class="fa fa-envelope"></i></a>
+	<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+	<a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+ </div>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+	  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner" style=" width:100%; height: 500px !important;">
+	  <div class="carousel-item active">
+		<img class="d-block w-100" src="images/a1.webp" alt="First slide"  style=" width:100%; height: 500px !important;">
+	  </div>
+	  <div class="carousel-item">
+		<img class="d-block w-100" src="images/a2.jfif" alt="Second slide"  style=" width:100%; height: 500px !important;">
+	  </div>
+	  <div class="carousel-item">
+		<img class="d-block w-100" src="images/a3.jfif" alt="Third slide"  style=" width:100%; height: 500px !important;">
+	  </div>
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Next</span>
+	</a>
+  </div> 
+  
+	<div class="text-grid">
+		<div class="grid-about">
+			<h2>About</h2>
+			<p>Government Engineering College, Bharuch is one of eight New Government Engineering Colleges established in July-2004.</p>
+		</div>
+		<div class="grid-vision">
+			<h2>Vision</h2>
+			<p>Impart value based Integrative education to empower youth by fostering innovation and leadership ethos for socio-professional needs.</p>
+		</div>
+		<div class="grid-mission">
+			<h2>Mission</h2>
+			<p>Strengthen academic infrastructure to achieve excellence in engineering education. Foster talent by developing global mindset.</p>
+		</div> 
+	</div>
+  <div class="container-fluid mt-5 px-5" >
+	<div class="row">
+	  <div class="col-sm-2">
+		<h3 class="borderBottom" >News</h3>
+		<div> 
+		   <marquee direction = "up" scrollamount="4" height="80px" onmouseover="this.stop();" onmouseout="this.start();"><a href="https://scholarships.gov.in/" target="_blank"><b>14-02-2022: </b>Filling Post Metric Scholarship forms on Digital Gujarat Portal for academic Year 2021-22 is reopen For SC,ST and OBC students. (From 10/02/2022 To 15/03/2022)
+		</a></marquee>
+		<marquee direction = "up" scrollamount="4" height="80px" onmouseover="this.stop();" onmouseout="this.start();"><a href="https://icai2022.in/" target="_blank">
+		<b>29-12-2021: </b>International Conference of Academic institutions (ICAI-2022)
+			</a></marquee>
+		<marquee direction = "up" scrollamount="4" height="80px" onmouseover="this.stop();" onmouseout="this.start();"><a href="https://drive.google.com/file/d/1ok53_upGJGlC2gk85OJmEV2AF11ChEbL/view?usp=sharing" target="_blank">
+			<b>18-11-2021: </b>Advertisement and Schedule for Government/GIA and IITRAM Final Vacant Seats Round
+			</a></marquee>
+		<marquee direction = "up" scrollamount="4" height="80px" onmouseover="this.stop();" onmouseout="this.start();"><a href="https://drive.google.com/file/d/1GKs_vYzeQ8aa68P4fjbq6gDR2jIQniEa/view?usp=sharing" target="_blank">
+			<b>28-09-2021: </b>Student Section Department Coordinator Contact Details</a></marquee>
+			<marquee direction = "up" scrollamount="4" height="80px" onmouseover="this.stop();" onmouseout="this.start();"><a href="https://drive.google.com/file/d/1cDyphqWqVkkQp359eFZl7hvhkUwRRbsS/view?usp=sharing" target="_blank"><b>28-06-2021: </b>GSIRF 2021 - Engineering - Ranking Result - Government Engineering College, Bharuch got 22nd Rank</a></marquee>
+   
+		</div>
+	  </div>
+	  <div class="col-sm-8 pb-3" style="background-color: #f4f4f4;">
+		<h3 class="borderBottom">Message From Principal <i class="fa fa-graduation-cap" aria-hidden="true"></i></h3>
+		<div class="row">
+			<div class="col-md-4 col-sm-12">
+				<img src="http://gecbharuch.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-04-at-11.54.26-e1644386298675.jpeg" class="img-fluid" alt="Sanjaykumar R Joshi">
+		
+			</div>
+			<div class="col-md-8 col-sm-12">
+				<p>Hope you and your family are all well and safe! Our (as well as for the country) primary concern now is on how to tide over this difficult phase of the pandemic. Firstly, I request you follow strictly the health guidelines provided by the state and centrals government agencies so as to help one another safeguard from the virus.</p>
+				<p>In a globally competitive world today, tumultuous changes are taking place. Even the nature of change is changing. Engineering education and services are no exception. Keeping in...</p>
+				<a class="btn btn-primary vm" href="http://gecbharuch.com/message-from-director/">
+					View More
+				</a>
+			 
+			</div>
+		</div>
+	   </div>
+	  <div class="col-sm-2">
+		<h4 class="borderBottom">Upcoming Events</h4>
+		<div>
+			<a><marquee direction = "up" scrollamount="4" height="80px" onmouseover="this.stop();" onmouseout="this.start();"><a><b>05-03-2022: Webinar under T&P Cell:</b><br>Indian Maritime sector and Employment Opportunities in Shipping and Maritime Sector
+			</marquee></a>
+			<a><marquee direction = "up" scrollamount="4" height="80px" onmouseover="this.stop();" onmouseout="this.start();"><a><b>07-03-2022: Webinar Under Women Development Cell: </b><br>Women's Safety and Security
+			</marquee></a>
+		</div>
+	  </div>
+	</div>
+  </div>
+  </div>
+  
+  <footer class="mainfooter mt-auto" role="contentinfo">
+	<div class="footer-middle">
+	<div class="container">
+	  <div class="row">
+		<div class="col-md-3 col-sm-6">
+		  <!--Column1-->
+		  <div class="footer-pad">
+			<h4>Heading 1</h4>
+			<ul class="list-unstyled">
+			  <li><a href="#"></a></li>
+			  <li><a href="#">Payment Center</a></li>
+			  <li><a href="#">Contact Directory</a></li>
+			  <li><a href="#">Forms</a></li>
+			  <li><a href="#">News and Updates</a></li>
+			  <li><a href="#">FAQs</a></li>
+			</ul>
+		  </div>
+		</div>
+		<div class="col-md-3 col-sm-6">
+		  <!--Column1-->
+		  <div class="footer-pad">
+			<h4>Heading 2</h4>
+			<ul class="list-unstyled">
+			  <li><a href="#">Website Tutorial</a></li>
+			  <li><a href="#">Accessibility</a></li>
+			  <li><a href="#">Disclaimer</a></li>
+			  <li><a href="#">Privacy Policy</a></li>
+			  <li><a href="#">FAQs</a></li>
+			  <li><a href="#">Webmaster</a></li>
+			</ul>
+		  </div>
+		</div>
+		<div class="col-md-3 col-sm-6">
+		  <!--Column1-->
+		  <div class="footer-pad">
+			<h4>Heading 3</h4>
+			<ul class="list-unstyled">
+			  <li><a href="#">Parks and Recreation</a></li>
+			  <li><a href="#">Public Works</a></li>
+			  <li><a href="#">Police Department</a></li>
+			  <li><a href="#">Fire</a></li>
+			  <li><a href="#">Mayor and City Council</a></li>
+			  <li>
+				<a href="#"></a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+		  <div class="col-md-3">
+			  <h4>Follow Us</h4>
+			  <ul class="social-network social-circle">
+			   <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+			   <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+			  </ul>				
+		  </div>
+	  </div>
+	  <div class="row">
+		  <div class="col-md-12 copy">
+			  <p class="text-center">&copy; Copyright 2018 - Company Name.  All rights reserved.</p>
+		  </div>
+	  </div>
+  
+  
+	</div>
+	</div>
+  </footer>
+
+
+<script>
+	var loader = document.getElementById("preloader");
+	window.addEventListener("load",function(){
+	loader.style.display="none";
+	})
+	
+	
+</script>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+
+</body>
+</html>
